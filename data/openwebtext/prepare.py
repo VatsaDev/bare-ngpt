@@ -17,7 +17,7 @@ num_proc = 1
 num_proc_load_dataset = num_proc
 
 if __name__ == '__main__':
-    dataset = load_dataset("VatsaDev/robofunctions", num_proc=num_proc_load_dataset)
+    dataset = load_dataset("VatsaDev/ftData", num_proc=num_proc_load_dataset)
 
     # owt by default only contains the 'train' split, so create a test split
     split_dataset = dataset["train"].train_test_split(test_size=0.2, seed=2357, shuffle=True)
